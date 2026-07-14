@@ -1,4 +1,4 @@
-# 🤖 Arduino Starter Kit R4 Projects
+# 🤖 Arduino Starter Kit R4 Learning Journey
 
 This repository documents my journey learning electronics and programming with the Arduino Starter Kit R4.
 
