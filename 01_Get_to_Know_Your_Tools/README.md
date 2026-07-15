@@ -4,6 +4,7 @@ In this project I built simple circuits using an LED, switches, and a resistor.
 
 This project is based on Project 01 from the Arduino Starter Kit R4. 
 
+---
 
 ## 🔎 Circuit Demo
 
@@ -12,23 +13,63 @@ Presented below in the first column is the main circuit where a single switch is
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github.com/user-attachments/assets/b773866d-bd7a-4b13-aa4e-ac173b92168f" height="600">
+      <img src="images/main_circuit.gif" height="700">
     </td>
     <td width="35%">
-      <img src="https://github.com/user-attachments/assets/2dd1937b-82d6-4ef8-9aa3-a6f25e4d172a" height="300"><br><br>
-      <img src="https://github.com/user-attachments/assets/480c9bf6-ce98-4aff-82c8-d7ef01725d93" height="300">
+      <img src="images/series_circuit.gif" height="350"><br><br>
+      <img src="images/parallel_circuit.gif" height="350">
     </td>
   </tr>
 </table>
-![Demo](images/main_circuit.gif)
-<img src="images/main_circuit.gif" alt="Main_circuit" width="700">
+
+---
 
 ## 🎯 Objective
 
 The purpose of this project is to understand the basic theory of electrical circuits, specifically, the connection of electrical components in series and parallel, as well as to become familiar with the Arduino board and the breadboard.
 
+---
 
 ## 🔋 Components
+
+List of hardware components used:
+- Arduino UNO R4 WiFi Board
+- USB-C Cable
+- Breadboard
+- 220 Ohm Resistor
+- LED
+- Pushbuttons (Switches)
+- Solid Core Jumber Wires
+- Stranded Jumper Wires
+
+---
+
+## 🛠️ Circuit Implementation
+
+This project features a basic hardware-controlled circuit powered directly by the *Arduino UNO R4 WiFi Board*. It functions as a pure hardware loop without requiring any digital I/O programming.
+
+* **Power Source:**
+  * **5V** on Arduino -> Positive (+) rail of the breadboard (Red wire)
+  * **GND** on Arduino -> Negative (-) rail of the breadboard (Black wire)
+* **LED & Button Loop:**
+  * **Pushbutton:** Placed in series to act as a physical switch for the current flow.
+  * **Red LED:** Connected in series with the button to receive power when pressed.
+  * **Resistor:** A current-limiting resistor connected in series to protect the LED and return the path to the negative (-) ground rail.
+
+---
+
+## How it Works
+
+* **What inputs are read:** No microcontroller inputs are read. The input is entirely physical: the mechanical press of the tactile pushbutton.
+* **What decisions does the program make:** The microcontroller does not make any software decisions, as the Arduino is utilized strictly as a stable 5V power supply. The "decision" to complete or break the electrical path is made mechanically by the state of the button.
+* **What outputs are produced:** The physical output is the illumination of the red LED, which lights up when the button is pressed (closing the circuit) and turns off when released (opening the circuit).
+
+
+
+
+
+
+
 
 
 
