@@ -7,7 +7,7 @@ This project is based on Project 02 from the Arduino Starter Kit R4.
 ---
 
 ## 🔎 Circuit Demo
-
+<img src="images/spaceship_interface_circuit.gif" height="800" width="100%">
 
 ---
 
