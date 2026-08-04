@@ -86,12 +86,63 @@ The circuit operates as a dynamic temperature-sensing indicator based on the ana
 
 * **Moderate Temperature Rise (2 LEDs ON):**
   * As heat transfers from your fingers and the temperature reaches a second higher threshold:
-  * Two *LEDs* (pins 2 & 3) light up simultaneously.
+  * Two *LEDs* (pins 2 & 3) turn `ON` simultaneously, indicating a moderate temperature rise.
+  * The remaining *LED* stays `OFF`.
 
 * **High Temperature Rise (3 LEDs ON):**
   * When the detected temperature exceeds the maximum defined threshold:
   * All three *LEDs* (pins 2, 3 & 4) turn `ON` simultaneously, indicating peak temperature.
 
+---
 
+## 💻 Code
 
+<img src="images/chill-o-meter_code.gif" height="800" width="100%">
 
+The program is organized into two main functions:
+
+- `setup()` – Initializes the *Serial Monitor*, configures the *LED* pins as outputs, and ensures that all LEDs are initially turned off.
+- `loop()` – Continuously reads the *temperature sensor*, converts the analog reading into *voltage* and *temperature*, displays the measured values in the *Serial Monitor*, and turns on the appropriate number of *LEDs* based on the measured temperature.
+
+### Key Functions Used
+
+- `Serial.begin()` – Initializes serial communication with the *Serial Monitor* at 9600 communication speed (baud rate).
+- `pinMode()` – Configures the *LED* pins as outputs.
+- `digitalWrite()` – Turns the *LEDs* on or off.
+- `analogRead()` – Reads the analog value from the *TMP36 Temperature Sensor*.
+- `Serial.print()` / `Serial.println()` – Displays the sensor reading, calculated voltage, and temperature in the *Serial Monitor*.
+- `delay()` – Adds a short pause before the next measurement in order to avoid broken results.
+
+---
+
+## 🎓 What I Learned
+
+Through building this project, I gained hands-on experience and practical knowledge about Arduino programming and analog electronics:
+
+* **Analog Inputs and ADC**
+  * Learned how to read analog signals using the Arduino's built-in *Analog-to-Digital Converter (ADC)*.
+  * Understood how analog sensor readings are converted into digital values.
+
+* **Working with a Temperature Sensor**
+  * Learned how to correctly connect and use a *TMP36 Temperature Sensor* in an Arduino circuit.
+  * Understood how to convert the sensor's analog output into voltage and then into temperature (°C).
+
+* **Serial Communication**
+  * Learned how to initialize and use the *Serial Monitor* for debugging and displaying sensor measurements.
+  * Gained experience using `Serial.begin()`, `Serial.print()`, and `Serial.println()`.
+
+* **Decision Making**
+  * Practiced using `if`, `else if`, and `else` statements to control multiple *LEDs* according to different temperature ranges.
+
+* **Arduino Programming Basics**
+  * Gained experience using essential Arduino functions such as `setup()`, `loop()`, `analogRead()`, `pinMode()`, `digitalWrite()`, and `delay()`.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+* Display the measured temperature on an LCD or OLED screen instead of using only the *Serial Monitor*.
+* Allow the user to adjust the baseline temperature dynamically using a potentiometer or pushbuttons.
+* Expand the project by controlling external devices (such as a fan or relay) automatically when the temperature reaches specific levels.
