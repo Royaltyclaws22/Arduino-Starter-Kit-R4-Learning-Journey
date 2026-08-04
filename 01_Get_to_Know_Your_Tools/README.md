@@ -90,20 +90,27 @@ Through building these circuits, I gained a lot of hands-on experience and solid
 
 * **Arduino Basics**
   * Learned how to safely power and connect the *Arduino board* to my computer using a *USB-C cable*.
+
 * **Using a Breadboard**
   * Understood how a *breadboard* works internally (how the power rails and component rows are connected) and how to use *jumper wires* to build clean circuits.
+
 * **Circuit Theory** 
   * Got a clear understanding of what a closed circuit is and what role each component plays.
   * Learned the difference between series and parallel connections, and how they physically act like AND / OR logic gates.
   * Applied Ohm’s Law ($V = I \cdot R$) to understand how voltage, current, and resistance work together.
+
 * **Component Identification**
   * Learned to identify components in real life (*resistors*, *switches*, *LEDs*) and how to find the anode (positive) and cathode (negative) of an *LED* by looking at its legs.
+
 * **Protecting Components**
   * Understood why we always need a *resistor* in series with an *LED* to prevent it from drawing too much current and burning out.
+
 * **Switch Pinout**
   * Figured out how 4-pin tactile *pushbuttons* are connected internally so I don't accidentally short-circuit them on the breadboard.
+
 * **Resistor Color Codes**
   * Learned how to read the colored bands on a *resistor* to calculate its value in Ohms.
+
 * **Using a Multimeter**
   * Learned how to use a digital multimeter to measure voltage and resistance directly on my circuit.
 
