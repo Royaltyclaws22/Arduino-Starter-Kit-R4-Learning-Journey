@@ -1,4 +1,4 @@
-# 🎛️ Spaceship Interface
+# 🚀 Spaceship Interface
 
 In this project, I built a simple Arduino circuit where a pushbutton is used as an input to control the behavior of multiple LEDs through embedded programming.
 
@@ -43,7 +43,7 @@ This project demonstrates a control panel simulation for a spaceship using an *A
 * **GND** on Arduino $\rightarrow$ Negative ($-$) rail of the *breadboard* (Black wire)
 
 ### 💡 Output Section: LED Indicators
-Two *red LEDs* and one *Green LED* are placed on the *breadboard*.
+Two *Red LEDs* and one *Green LED* are placed on the *breadboard*.
 
 * **Ground Connections:** For every individual *LED*, a *220Ω resistor* connects its cathode (short leg) directly to the common ground ($-$) rail of the *breadboard*.
 * **Signal Lines (Digital Pins):**
@@ -113,11 +113,14 @@ Through building this project, I gained hands-on experience and practical knowle
 
 * **Arduino Inputs and Outputs**
   * Learned how to configure and use Arduino pins as inputs and outputs to interact with external components such as *pushbuttons* and *LEDs*.
+  
 * **Arduino Programming Basics**
   * Learned how to structure a simple Arduino program using variables, functions, and comments to create clean and understandable code.
   * Gained experience using essential Arduino functions such as `setup()`, `loop()`, `pinMode()`, `digitalRead()`, `digitalWrite()` and `delay()`.
+  
 * **Digital Input and Output Logic**
   * Understood how Arduino reads digital signals (`HIGH` and `LOW`) from input devices and controls output devices based on these values.
+  
 * **Uploading Code to the Arduino Board**
   * Learned how to connect the Arduino board to my computer and upload sketches using the Arduino IDE.
 
