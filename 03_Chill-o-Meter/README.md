@@ -39,13 +39,6 @@ This project demonstrates a temperature monitoring system using an *Arduino UNO 
 * **5V** on Arduino $\rightarrow$ Positive ($+$) rail of the *breadboard* (Red wire)
 * **GND** on Arduino $\rightarrow$ Negative ($-$) rail of the *breadboard* (Black wire)
 
-### 💡 Output Section: LED Indicators
-Three *red LEDs* are placed on the *breadboard* to serve as visual threshold indicators.
-
-* **Ground Connections:** For every individual *LED*, a *220Ω resistor* connects its cathode (short leg) directly to the common ground ($-$) rail of the *breadboard*.
-* **Signal Lines (Digital Pins):**
-  * The anodes (long legs) of the three *LEDs* connect to Arduino digital pins 2, 3, and 4, respectively.
-
 ### 🌡️ Input Section: TMP36 Temperature Sensor 
 A *TMP36 Temperature Sensor* acts as the primary analog input component.
 
@@ -53,6 +46,13 @@ A *TMP36 Temperature Sensor* acts as the primary analog input component.
 * **Power Connection:** The left pin (with the flat side facing the user) connects directly to the positive ($+$) power rail.
 * **Ground Connection:** The right pin connects directly to the common ground ($-$) rail.
 * **Signal Connection:** The middle pin connects directly to Arduino analog input pin *A0* (Analog Pin 0) via a signal jumper wire.
+
+### 💡 Output Section: LED Indicators
+Three *red LEDs* are placed on the *breadboard* to serve as visual threshold indicators.
+
+* **Ground Connections:** For every individual *LED*, a *220Ω resistor* connects its cathode (short leg) directly to the common ground ($-$) rail of the *breadboard*.
+* **Signal Lines (Digital Pins):**
+  * The anodes (long legs) of the three *LEDs* connect to Arduino digital pins 2, 3, and 4, respectively.
 
 ### ⚠️ Safety Tip
 To ensure hardware safety, the *Arduino board* is strictly kept disconnected from any power source (via the *USB-C cable*) throughout the circuit assembly process. The board is only connected to the computer via the *USB-C cable* once all physical connections and circuit designs are fully completed and verified.
@@ -120,8 +120,8 @@ The program is organized into two main functions:
 Through building this project, I gained hands-on experience and practical knowledge about Arduino programming and analog electronics:
 
 * **Analog Inputs and ADC**
-  * Learned how to read analog signals using the Arduino's built-in *Analog-to-Digital Converter (ADC)*.
-  * Understood how analog sensor readings are converted into digital values.
+  * Learned how to use the `analogRead()` function to read analog signals from sensors using the Arduino's built-in Analog-to-Digital Converter (ADC).
+  * Understood how analog sensor readings are converted into digital values that can be processed by the program.
 
 * **Working with a Temperature Sensor**
   * Learned how to correctly connect and use a *TMP36 Temperature Sensor* in an Arduino circuit.
@@ -133,9 +133,6 @@ Through building this project, I gained hands-on experience and practical knowle
 
 * **Decision Making**
   * Practiced using `if`, `else if`, and `else` statements to control multiple *LEDs* according to different temperature ranges.
-
-* **Arduino Programming Basics**
-  * Gained experience using essential Arduino functions such as `setup()`, `loop()`, `analogRead()`, `pinMode()`, `digitalWrite()`, and `delay()`.
 
 ---
 
