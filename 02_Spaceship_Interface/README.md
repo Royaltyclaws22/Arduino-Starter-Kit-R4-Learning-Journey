@@ -42,6 +42,13 @@ This project demonstrates a control panel simulation for a spaceship using an *A
 * **5V** on Arduino $\rightarrow$ Positive ($+$) rail of the *breadboard* (Red wire)
 * **GND** on Arduino $\rightarrow$ Negative ($-$) rail of the *breadboard* (Black wire)
 
+### 🔘 Input Section: Control Switch
+A single tactile *pushbutton* acts as the primary "launch" or system trigger.
+
+* **Power Connection:** One terminal of the *switch* is connected to the positive ($+$) power rail.
+* **Signal Connection:** The opposite terminal of the *switch* connects directly to Arduino digital pin 2.
+* **Pull-down Resistor:** From this same switch-pin-to-Arduino connection point, a *10kΩ resistor* is added to the common ground ($-$) rail. This pull-down *resistor* ensures the Arduino pin reads a clean `LOW` state when the *switch* is unpressed by referencing it to ground.
+
 ### 💡 Output Section: LED Indicators
 Two *Red LEDs* and one *Green LED* are placed on the *breadboard*.
 
@@ -49,13 +56,6 @@ Two *Red LEDs* and one *Green LED* are placed on the *breadboard*.
 * **Signal Lines (Digital Pins):**
   * The anodes (long legs) of the two *Red LEDs* connect to Arduino pins 5 and 4, respectively.
   * The anode (long leg) of the *Green LED* connects to Arduino pin 3.
-  
-### 🔘 Input Section: Control Switch
-A single tactile *pushbutton* acts as the primary "launch" or system trigger.
-
-* **Power Connection:** One terminal of the *switch* is connected to the positive ($+$) power rail.
-* **Signal Connection:** The opposite terminal of the *switch* connects directly to Arduino digital pin 2.
-* **Pull-down Resistor:** From this same switch-pin-to-Arduino connection point, a *10kΩ resistor* is added to the common ground ($-$) rail. This pull-down *resistor* ensures the Arduino pin reads a clean `LOW` state when the *switch* is unpressed by referencing it to ground.
 
 ### ⚠️ Safety Tip
 To ensure hardware safety, the *Arduino board* is strictly kept disconnected from any power source (via the *USB-C cable*) throughout the circuit assembly process. The board is only connected to the computer via the *USB-C cable* once all physical connections and circuit designs are fully completed and verified.
