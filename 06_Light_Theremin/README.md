@@ -153,5 +153,3 @@ Possible extensions for this project include:
 - Using multiple *phototransistors* to control different aspects of the sound, such as pitch and volume.
 - Adding an improved calibration process with visual feedback and an adjustable calibration time.
 - Mapping the light sensor readings to specific musical notes to allow the theremin to play recognizable melodies.
-
----
