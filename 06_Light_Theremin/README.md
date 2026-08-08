@@ -7,12 +7,13 @@ This project is based on Project 06 from the Arduino Starter Kit R4.
 ---
 
 ## 🔎 Circuit Demo
-<img src="images/mood_cue_circuit.gif" height="800" width="100%">
 
+<p align="center">
+  <img src="images/light_theremin_circuit.gif" height="800" width="100%">
+</p>
 
-
-
-
-
-
-[▶️ Watch the full demo with sound] (https://github.com/Royaltyclaws22/Arduino-Starter-Kit-R4-Learning-Journey/releases/download/v0.1/light_theremin_circuit.mp4)
+<p align="center">
+  <a href="https://github.com/Royaltyclaws22/Arduino-Starter-Kit-R4-Learning-Journey/releases/download/v0.6/light_theremin_circuit.mp4">
+    ▶ Watch Full Video (with sound)
+  </a>
+</p>
