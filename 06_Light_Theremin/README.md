@@ -126,6 +126,32 @@ The program is organized into two main functions:
 
 ## 🎓 What I Learned
 
+Through building this project, I gained hands-on experience and practical knowledge about analog sensors, sensor calibration, value mapping, and sound generation with Arduino:
 
+* **Working with a Piezo Element**
+  * Learned that a *piezo element* vibrates when an electrical signal is applied, producing sound waves by moving the surrounding air.
+  * Learned how to identify a *piezo element* as a component and connect it correctly in an Arduino circuit.
 
+* **Analog Inputs and Sensor Calibration**
+  * Learned how to calibrate an analog sensor using `while` and `if` statements to automatically determine the minimum and maximum light levels in the current environment.
+  * Understood why sensor calibration is useful, since a sensor may not naturally produce the full 12-bit ADC range (0–4095) under normal environmental conditions.
 
+* **Mapping Sensor Values**
+  * Gained further experience with the `map()` function by converting the calibrated light sensor readings into a usable range of audible frequencies.
+  * Understood how calibration and value mapping allow raw sensor readings to be translated into meaningful output values.
+
+* **Generating Sound with Arduino**
+  * Practiced generating sound using the `tone()` function through the *piezo element*.
+  * Learned how changes in the *phototransistor's* light readings can be translated into different audible pitches.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Using multiple *phototransistors* to control different aspects of the sound, such as pitch and volume.
+- Adding an improved calibration process with visual feedback and an adjustable calibration time.
+- Mapping the light sensor readings to specific musical notes to allow the theremin to play recognizable melodies.
+
+---
