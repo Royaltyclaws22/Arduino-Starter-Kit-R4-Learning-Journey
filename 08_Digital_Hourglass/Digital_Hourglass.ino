@@ -73,7 +73,7 @@ void loop() {
   // Read tilt switch state
   switchState = digitalRead(SWITCH_PIN);
 
-  // Reset the timer whenever the button changes state
+  // Reset the timer whenever the switch changes state
   if (switchState != previousSwitchState) {
     setAllLeds(LOW);
 
