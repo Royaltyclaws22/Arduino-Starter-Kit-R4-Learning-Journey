@@ -132,3 +132,40 @@ The program is organized into two main functions:
 - `digitalWrite()` – Turns the *motor* `ON` or `OFF` depending on the state of the *pushbutton*.
 
 ---
+
+## 🎓 What I Learned
+
+Through building this project, I gained hands-on experience and practical knowledge about Arduino programming, power electronics, *motors*, and inductive loads:
+
+- **MOSFET Transistors**
+  - Learned that a *MOSFET transistor* allows controlling high-current and high-voltage power sources using the low-current digital output of an *Arduino board*.
+  - Understood that a *MOSFET* acts as an electronic switch: when a voltage is applied to the `Gate`, it allows current to flow between the `Drain` and `Source` terminals, making it a voltage-controlled device.
+  - Learned to identify a *MOSFET transistor* and correctly recognize its `Gate`, `Drain`, and `Source` pins (left, middle, and right respectively) to wire it properly in a circuit.
+
+- **DC Motors and Electromagnetic Induction**
+  - Understood that electromagnetic induction is the process by which a changing electrical current produces a changing magnetic field around a conductor.
+  - Learned that a *DC motor* is an inductive device that uses a tightly wound copper coil to generate a magnetic field, causing the *motor* shaft to rotate.
+  - Understood that the opposite process is also possible: when the shaft is rotated mechanically, the *motor* acts as a generator and produces electrical energy.
+  - Learned to identify a *DC motor* and correctly recognize its power (red) and ground (black) wires for proper circuit connections.
+
+- **Diodes and Back Voltage Protection**
+  - Understood that when power to a *motor* is removed, the motor continues spinning briefly because of its inertia.
+  - Learned that this spinning *motor* generates a reverse voltage (back EMF), which can damage electronic components such as the *MOSFET transistor*.
+  - Understood the importance of connecting a *diode* in parallel with the *motor* to safely dissipate this reverse voltage and protect the rest of the circuit.
+  - Learned that a *diode* is a polarized component that allows current to flow in only one direction.
+  - Learned to identify a *diode* and correctly recognize its anode and cathode (marked with a stripe) in order to connect it properly.
+
+- **Power Supply and Current Limitations**
+  - Understood that Arduino digital pins can safely provide only up to `40 mA` of current, which is not enough to power a *motor* directly.
+  - Learned why an external *9V battery* connected through a *battery snap connector* is required to provide the voltage and current needed by the *motor*.
+  - Understood that the *MOSFET transistor* acts as a bridge between the Arduino's low-power control signal and the higher-power external *battery*, allowing the *board* to safely control the *motor* without supplying its operating current directly.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Adding a potentiometer to control the *motor* speed using PWM instead of simple `ON`/`OFF` operation.
+- Replacing the *pushbutton* with a temperature, light, or distance sensor to automatically control the *motor* based on environmental conditions.
+- Using an H-bridge *motor* driver to enable bidirectional *motor* control, allowing the *motor* to rotate both clockwise and counterclockwise.
