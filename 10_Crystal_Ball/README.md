@@ -50,7 +50,7 @@ A *tilt switch* acts as the digital input component to detect movement or shakin
   * Pins 3 & 4 (the opposite side of the *switch*) connect directly to Arduino digital pin `6`.
   * The same leg is also connected to the common ground ($-$) rail through a *10kΩ pull-down resistor* to ensure a clean `LOW` signal when the *switch* is open.
 
-### 📟 Output Section: 16x2 LCD Display & Potentiometer
+### 📟 Output Section: LCD Display & Potentiometer
 An *16x2 LCD screen* is used in 4-bit data mode to display text, accompanied by a *10k ohm potentiometer* for screen contrast adjustment.
 
 * **Power & Control Pins:**
