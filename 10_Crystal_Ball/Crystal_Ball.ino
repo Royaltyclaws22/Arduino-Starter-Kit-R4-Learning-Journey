@@ -5,7 +5,7 @@ Project 10: Crystal Ball
 
 #include <LiquidCrystal.h>
 
-// LCD Configuration
+// Create the LCD object and define its Arduino pin connections (RS, E, D4-D7)
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 // Pin Definition
