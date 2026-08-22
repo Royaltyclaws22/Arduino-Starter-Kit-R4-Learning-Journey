@@ -1,3 +1,8 @@
+/* 
+Arduino Starter Kit R4
+Project 10: Crystal Ball
+*/
+
 #include <LiquidCrystal.h>
 
 // LCD Configuration
