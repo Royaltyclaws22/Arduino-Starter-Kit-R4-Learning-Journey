@@ -1,6 +1,6 @@
 # 🔮 Crystal Ball
 
-In this project, I built an Arduino crystal ball that tells the future using a *tilt sensor* and displays predictions on an *LCD screen*.
+In this project, I built an Arduino Crystal Ball that tells the future using a *tilt sensor* and displays predictions on an *LCD screen*.
 
 This project is based on Project 10 from the Arduino Starter Kit R4.
 
@@ -36,7 +36,7 @@ List of hardware components used:
 
 ## 🛠️ Circuit Implementation
 
-This project demonstrates an interactive crystal ball system using an *Arduino UNO R4 WiFi Board* to detect physical orientation/shake inputs via a *Tilt Sensor (Tilt Switch)* and display text responses on a *16x2 LCD (Liquid Crystal Display)*.
+This project demonstrates an interactive Crystal Ball system using an *Arduino UNO R4 WiFi Board* to detect physical orientation/shake inputs via a *Tilt Sensor (Tilt Switch)* and display text responses on a *16x2 LCD (Liquid Crystal Display)*.
 
 ### 🔌 Power Source
 * **5V** on Arduino $\rightarrow$ Positive ($+$) power rail of the *breadboard* (Red wire)
@@ -51,23 +51,23 @@ A *tilt switch* acts as the digital input component to detect movement or shakin
   * The same leg is also connected to the common ground ($-$) rail through a *10kΩ pull-down resistor* to ensure a clean `LOW` signal when the *switch* is open.
 
 ### 📟 Output Section: LCD Display & Potentiometer
-An *16x2 LCD screen* is used in 4-bit data mode to display text, accompanied by a *10k ohm potentiometer* for screen contrast adjustment.
+An *16x2 LCD screen* is used in 4-bit data mode to display text, accompanied by a *10k ohm potentiometer* for *screen* contrast adjustment.
 
 * **Power & Control Pins:**
-  * **VSS (Pin 1):** Connects to the common ground ($-$) rail.
-  * **VDD / VCC (Pin 2):** Connects directly to the positive ($+$) 5V rail.
-  * **V0 (Pin 3 - Contrast):** Connects to the center wiper pin of the *potentiometer* (the outer pins of the *potentiometer* connect to the positive ($+$) 5V rail and common ground ($-$) rail).
-  * **RS (Pin 4 - Register Select):** Connects to Arduino digital pin `12`.
-  * **R/W (Pin 5 - Read/Write):** Connects to the common ground ($-$) rail to permanently enable write mode.
-  * **E (Pin 6 - Enable):** Connects to Arduino digital pin `11`.
+  * `VSS` **(Pin 1):** Connects to the common ground ($-$) rail.
+  * `VDD` **(Pin 2):** Connects directly to the positive ($+$) 5V rail.
+  * `V0` **(Pin 3 - Contrast):** Connects to the center wiper pin of the *potentiometer* (the outer pins of the *potentiometer* connect to the positive ($+$) 5V rail and common ground ($-$) rail).
+  * `RS` **(Pin 4 - Register Select):** Connects to Arduino digital pin `12`.
+  * `R/W` **(Pin 5 - Read/Write):** Connects to the common ground ($-$) rail to permanently enable write mode.
+  * `E` **(Pin 6 - Enable):** Connects to Arduino digital pin `11`.
 * **Data Bus Pins (4-bit mode):**
-  * **D4 (Pin 11):** Connects to Arduino digital pin `5`.
-  * **D5 (Pin 12):** Connects to Arduino digital pin `4`.
-  * **D6 (Pin 13):** Connects to Arduino digital pin `3`.
-  * **D7 (Pin 14):** Connects to Arduino digital pin `2`.
+  * `D4` **(Pin 11):** Connects to Arduino digital pin `5`.
+  * `D5` **(Pin 12):** Connects to Arduino digital pin `4`.
+  * `D6` **(Pin 13):** Connects to Arduino digital pin `3`.
+  * `D7` **(Pin 14):** Connects to Arduino digital pin `2`.
 * **Backlight Connections:**
-  * **LED+ / A (Pin 15 - Anode):** Connects to the positive ($+$) 5V rail through a *220Ω current-limiting resistor*.
-  * **LED- / K (Pin 16 - Cathode):** Connects directly to the common ground ($-$) rail.
+  * `LED+` **(Pin 15 - Anode):** Connects to the positive ($+$) 5V rail through a *220Ω current-limiting resistor*.
+  * `LED-` **(Pin 16 - Cathode):** Connects directly to the common ground ($-$) rail.
 
 ### ⚠️ Safety Tip
 To ensure hardware safety, the *Arduino board* is strictly kept disconnected from any power source (via the *USB-C cable*) throughout the circuit assembly process. The board is only connected to the computer via the *USB-C cable* once all physical connections and circuit designs are fully completed and verified.
@@ -86,7 +86,7 @@ To ensure hardware safety, the *Arduino board* is strictly kept disconnected fro
 
 ## ⚙️ How it Works
 
-The circuit operates as an interactive digital fortune-teller (crystal ball) that detects physical movement or orientation changes via a *tilt switch* and dynamically displays randomized answers on a *16x2 Liquid Crystal Display (LCD)*:
+The circuit operates as an interactive digital fortune-teller (Crystal Ball) that detects physical movement or orientation changes via a *tilt switch* and dynamically displays randomized answers on a *16x2 Liquid Crystal Display (LCD)*:
 
 * **System Initialization (Setup Phase):**
   * Upon power-up, the *Arduino UNO R4 WiFi* initializes the *16x2 LCD* in 4-bit communication mode using the `LiquidCrystal` library.
@@ -132,3 +132,39 @@ The program is organized into two main functions:
 - `lcd.clear()` – Clears the *LCD screen* before displaying a new prediction.
 
 ---
+
+## 🎓 What I Learned
+
+Through building this project, I gained hands-on experience and practical knowledge about *LCD displays*, Arduino programming, and basic user interaction:
+
+* **Understanding LCD Displays**
+  * Learned that an *LCD (Liquid Crystal Display)* is a *screen* used to display text. It works by changing the electrical properties of a liquid crystal layer sandwiched between two polarized glass layers. When an electric charge is applied, the liquid crystals change their orientation, blocking or allowing light to pass through the polarized glass and forming the characters displayed on the *screen*.
+  * Learned how to identify an *LCD display* and correctly connect its pins for both power and communication in an Arduino circuit.
+  * Became familiar with the purpose of each *LCD* pin:
+    * `VSS` – Ground connection.
+    * `VDD` – Power supply.
+    * `V0` – Adjusts the *display* contrast.
+    * `RS (Register Select)` – Selects whether the *LCD* receives commands or character data.
+    * `R/W (Read/Write)` – Selects read or write mode. Connecting it to ground keeps the *LCD* permanently in write mode.
+    * `E (Enable)` – Signals the *LCD* to read incoming commands or data.
+    * `DB0–DB7` – Data pins used to transfer commands and character data to the *display*.
+    * `LED+` – Backlight power connection (typically through a current-limiting resistor).
+    * `LED-` – Ground connection for the *LCD* backlight.
+
+* **Using the LiquidCrystal Library**
+  * Practiced using the `LiquidCrystal` library by creating an `lcd` object and controlling the *display* through functions such as `lcd.begin()`, `lcd.print()`, `lcd.setCursor()`, and `lcd.clear()`.
+  * Learned how to initialize an *LCD*, position the cursor, display text on different rows, and clear the *screen* before displaying new information.
+
+* **Random Number Generation and Program Flow**
+  * Learned how to use the `random()` function to generate random values and use them to produce different outcomes each time the program runs.
+  * Practiced using `switch`/`case` statements to execute different sections of code based on the randomly generated value, making the program more organized and easier to read than using multiple `if` statements.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Adding a larger *LCD*/OLED display to show longer messages and provide a more interactive user experience.
+- Adding more prediction responses and using custom animations or scrolling text effects on the display.
+- Replacing the *tilt sensor* with additional input methods, such as buttons or a rotary encoder, to allow users to interact with the Crystal Ball in different ways.
