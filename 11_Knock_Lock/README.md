@@ -145,3 +145,31 @@ The program is organized into three main functions:
 - `analogRead()` – Reads the vibration level from the *piezo element*.
 
 ---
+
+## 🎓 What I Learned
+
+Through building this project, I gained hands-on experience with *piezo sensors*, *servo motor* control, and writing more structured Arduino programs:
+
+* **Using a Piezo Element as an Input Sensor**
+  * Learned that a *piezo element* can also be used as an input device when connected as a voltage divider with a high-value resistor.
+  * Understood that the *piezo element* can detect vibrations and generate voltage changes that can be read by the Arduino's analog inputs.
+  * Learned how pressing the *piezo element* against a solid vibrating surface, such as a wooden tabletop, allows the Arduino to measure the intensity of a knock.
+
+* **Controlling a Servo Motor**
+  * Practiced using the `Servo.h` library by creating a `Servo` object and controlling its movement.
+  * Gained more experience using functions such as `Servo.attach()` to connect the *servo motor* to a specific pin and `Servo.write()` to move it to a desired position.
+  * Understood how a servo motor can be used to simulate a simple locking mechanism.
+
+* **Writing More Complex Arduino Programs**
+  * Gained experience developing a more complex program that combines multiple inputs and outputs, including a *piezo sensor*, *pushbutton*, *LEDs*, and a *servo motor*.
+  * Understood the importance of creating custom functions to perform specific tasks, allowing code to be reused and making the program cleaner, more organized, and easier to maintain.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Adding a more advanced knock detection algorithm that can recognize specific knock patterns instead of only counting `3 valid knocks`.
+- Adding an LCD display or additional *LEDs* to provide clearer feedback about the lock status and the number of remaining knocks.
+- Improving the security of the system by replacing the *pushbutton* activation with a password input, RFID reader, or another authentication method.
