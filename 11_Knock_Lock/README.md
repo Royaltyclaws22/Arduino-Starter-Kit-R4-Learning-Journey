@@ -158,7 +158,7 @@ Through building this project, I gained hands-on experience with *piezo sensors*
 * **Controlling a Servo Motor**
   * Practiced using the `Servo.h` library by creating a `Servo` object and controlling its movement.
   * Gained more experience using functions such as `Servo.attach()` to connect the *servo motor* to a specific pin and `Servo.write()` to move it to a desired position.
-  * Understood how a servo motor can be used to simulate a simple locking mechanism.
+  * Understood how a *servo motor* can be used to simulate a simple locking mechanism.
 
 * **Writing More Complex Arduino Programs**
   * Gained experience developing a more complex program that combines multiple inputs and outputs, including a *piezo sensor*, *pushbutton*, *LEDs*, and a *servo motor*.
