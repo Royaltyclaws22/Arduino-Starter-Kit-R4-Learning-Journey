@@ -2,7 +2,7 @@
 
 In this project, I built an Arduino Knock Lock that uses a *piezo capsule* to detect valid knocks and a *servo motor* to simulate a simple locking mechanism.
 
-This project is based on Project 11 from the Arduino Starter Kit R4.
+This project is based on Project 11
 
 ---
 
