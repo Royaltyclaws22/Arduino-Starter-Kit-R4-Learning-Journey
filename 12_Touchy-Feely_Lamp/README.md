@@ -136,15 +136,15 @@ Through building this project, I gained hands-on experience and practical knowle
   * Applied capacitive touch sensing to control an *LED*, turning it on whenever a touch event was detected.
 
 * **Sensor Design and Sensitivity**
-  * Understood that capacitive touch sensors can detect changes in capacitance even through non-conductive materials, such as wood and plastic, because the dielectric properties of these materials affect capacitance. Materials with higher relative permittivity (εᵣ) produce larger capacitance changes:
-$$
-C \propto \varepsilon_r
-$$
+  * Understood that capacitive touch sensors can detect changes in capacitance even through non-conductive materials, such as wood and plastic, because the dielectric properties of these materials affect capacitance. Materials with higher relative permittivity (`εᵣ`) produce larger capacitance changes:
+    
+    `C ∝ εᵣ`
+    
   * Learned that increasing the surface area of the conductive sensor increases its sensitivity, since the capacitance of a sensor electrode is generally proportional to its surface area:
-$$
-C \propto A
-$$
-    where increasing the electrode area (A) results in a larger change in capacitance and improves touch detection sensitivity.
+    
+    `C ∝ A`
+    
+    where increasing the electrode area (`A`) results in a larger change in capacitance and improves touch detection sensitivity.
   * Learned why larger conductive surfaces, such as *aluminum foil* or copper mesh, are recommended when creating custom touch sensors.
   * Understood how a larger conductive surface can be used to create a practical lamp base by attaching *foil* to the sensor wire and placing it inside a base made of cardboard, thin wood, or cloth. The entire base can then function as a touch sensor.
 
