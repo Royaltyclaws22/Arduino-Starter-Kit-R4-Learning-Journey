@@ -119,3 +119,45 @@ The program is organized into two main functions:
 - `delay()` – Adds a short pause between sensor readings to improve measurement stability.
 
 ---
+
+## 🎓 What I Learned
+
+Through building this project, I gained hands-on experience and practical knowledge about capacitive touch sensing, Arduino libraries, and how changes in capacitance can be used to detect human touch:
+
+* **Capacitance and Capacitive Touch Sensing**
+  * Learned that capacitance is a measure of how much electrical charge a material or object can store.
+  * Understood how the *Arduino UNO* features dedicated hardware called the CTSU (Capacitive Touch Sensing Unit), which can directly measure tiny changes in capacitance on specific pins without requiring external resistors or multiple pin connections.
+  * Learned that when a conductive material connected to a sensor pin is touched, the human body slightly changes the capacitance of the pin. The hardware detects this change, allowing the Arduino to accurately and reliably sense touch events.
+
+* **Using the `Arduino_CapacitiveTouch` Library**
+  * Learned how to install and use specialized libraries in the Arduino IDE, such as the `Arduino_CapacitiveTouch` library.
+  * Practiced converting regular Arduino pins into touch sensors by connecting them to a conductive surface, such as *aluminum foil*.
+  * Used the library functions `touchSensor.begin()`, `touchSensor.setThreshold()`, `touchSensor.getThreshold()`, `touchSensor.read()`, and `touchSensor.isTouched()` to initialize the sensor, configure the detection threshold, read capacitance values, and detect touch events.
+  * Applied capacitive touch sensing to control an *LED*, turning it on whenever a touch event was detected.
+
+* **Sensor Design and Sensitivity**
+  * Understood that capacitive touch sensors can detect changes in capacitance even through non-conductive materials, such as wood and plastic, because the dielectric properties of these materials affect capacitance. Materials with higher relative permittivity (εᵣ) produce larger capacitance changes:
+
+    \[
+    C \propto \varepsilon_r
+    \]
+
+  * Learned that increasing the surface area of the conductive sensor increases its sensitivity, since the capacitance of a sensor electrode is generally proportional to its surface area:
+
+    \[
+    C \propto A
+    \]
+
+    where increasing the electrode area (A) results in a larger change in capacitance and improves touch detection sensitivity.
+  * Learned why larger conductive surfaces, such as *aluminum foil* or copper mesh, are recommended when creating custom touch sensors.
+  * Understood how a larger conductive surface can be used to create a practical lamp base by attaching *foil* to the sensor wire and placing it inside a base made of cardboard, thin wood, or cloth. The entire base can then function as a touch sensor.
+
+---
+
+## 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Adding an adjustable touch sensitivity system using a potentiometer or automatic calibration to adapt the sensor threshold to different environments and materials.
+- Adding multiple capacitive touch areas to control different *LEDs*, brightness levels, or lighting patterns depending on where the user touches the lamp.
+- Adding wireless connectivity using an ESP32 module to enable smartphone control, remote monitoring, programmable lighting modes, and smart home integration.
