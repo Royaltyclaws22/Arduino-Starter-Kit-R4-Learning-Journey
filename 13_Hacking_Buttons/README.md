@@ -152,5 +152,3 @@ Possible extensions for this project include:
 - Controlling multiple buttons on the same device by using additional *optocouplers*, allowing the Arduino to perform more complex actions.
 - Integrating wireless communication modules (e.g. Bluetooth or Wi-Fi) to allow remote control of *external devices* through a smartphone or a web interface.
 - Replacing the fixed delays with sensors or user inputs to create a more interactive and responsive control system.
-
----
